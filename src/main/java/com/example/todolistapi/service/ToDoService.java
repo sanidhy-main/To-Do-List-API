@@ -43,6 +43,15 @@ public class ToDoService {
         return null;
     }
 
+    public void markCompleted(int id, boolean status) {
+        for (Task task : tasks) {
+            if (task.getId() == id) {
+                task.setCompleted(status);
+                return;
+            }
+        }
+    }
+
     public ArrayList<Task> viewAll() {
         return tasks;
     }

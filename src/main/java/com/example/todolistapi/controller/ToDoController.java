@@ -41,6 +41,11 @@ public class ToDoController {
         service.editTask(id, task.getTitle());
     }
 
+    @PutMapping("/tasks/{id}/status")
+    public void completeTask(@PathVariable int id, Boolean status) {
+        service.markCompleted(id, status);
+    }
+
     @DeleteMapping("/tasks/{id}")
     public void removeTask(@PathVariable int id) {
         service.removeTask(id);
