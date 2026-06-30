@@ -25,9 +25,9 @@ public class ToDoService {
     }
 
     public void removeTask(int id) {
-        for (Task task : tasks) {
-            if (task.getId() == id) {
-                tasks.remove(task);
+        for (int i = 0; i < tasks.size(); i++) {
+            if (tasks.get(i).getId() == id) {
+                tasks.remove(i);
                 return;
             }
         }
