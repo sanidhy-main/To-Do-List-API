@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
 
 @SpringBootApplication
-OpenAPIDefinition(
+@OpenAPIDefinition(
         info = @Info(
                 title = "Sanidhy's To-Do API",
         version = "1.0.0",
